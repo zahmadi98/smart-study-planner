@@ -7,7 +7,7 @@ const ProgressBar = ({ progress = 17 }) => {
         </span>
 
         <span className="text-emerald-300 text-sm font-semibold">
-          {progress}%
+          فرم پیشرفت
         </span>
       </div>
 
