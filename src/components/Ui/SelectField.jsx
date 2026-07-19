@@ -15,7 +15,7 @@ const SelectField = ({
         htmlFor={id}
         className="flex items-center gap-2 mb-2 text-sm font-medium text-slate-300"
       >
-        <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+        <span className="w-1 h-1 rounded-full bg-emerald-400"></span>
         {label}
       </label>
 
