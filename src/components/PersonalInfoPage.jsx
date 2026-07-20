@@ -1,5 +1,6 @@
 import InfoPage from "./InfoPage";
 import ProgressBar from "./ProgressBar";
+import Sidebar from "./Sidebar";
 
 const PersonalInfoPage = () => {
     
@@ -15,9 +16,7 @@ const PersonalInfoPage = () => {
 
                 <div className="w-[1px] self-stretch bg-emerald-900/40"></div>
 
-                <div className="text-white flex-[1]">
-                    lefttttttt
-                </div>
+                <Sidebar />
 
             </div>
         </div>
