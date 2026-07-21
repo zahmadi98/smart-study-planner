@@ -84,14 +84,19 @@ const InfoPage = ({className}) => {
             </div>
             
             <div className="flex gap-4">
-                <InputField
-                id="educationLevel"
-                type="text"
-                label=" پایه تحصیلی"
-                icon={FiBookOpen}
-                value={educationLevel}
-                onChange={(e) => setEducationLevel(e.target.value)}
-                placeholder="پایه تحصیلی خود را وارد کنید"
+
+                <SelectField
+                    id="feducationLevel"
+                    label="پایه تحصیلی"
+                    icon={FiBookOpen}
+                    value={educationLevel}
+                    onChange={(e) => setEducationLevel(e.target.value)}
+                    options={[
+                        { value: "Tenth", label: "دهم" },
+                        { value: "Eleventh", label: "یازدهم" },
+                        { value: "Twelfth", label: "دوازدهم" },
+                        { value: "else", label: "سایر" },
+                    ]}
                 />
 
                 <SelectField
