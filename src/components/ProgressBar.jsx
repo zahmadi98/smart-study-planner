@@ -13,7 +13,7 @@ const ProgressBar = ({ progress = 17 }) => {
 
       <div className="w-full h-3 rounded-full bg-emerald-950/40 overflow-hidden border border-emerald-900/40">
         <div
-          className="h-full rounded-full bg-gradient-to-r from-emerald-400 via-emerald-300 to-green-300 transition-all duration-700 ease-out"
+          className="h-full rounded-full bg-linear-to-r from-emerald-400 via-emerald-300 to-green-300 transition-all duration-700 ease-out"
           style={{ width: `${progress}%` }}
         />
       </div>
