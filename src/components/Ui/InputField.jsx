@@ -13,14 +13,14 @@ const InputField = ({
     <div className="w-full">
       <label
         htmlFor={id}
-        className="block mb-2 text-sm font-medium text-slate-300"
+        className="block mb-2 text-xs md:text-sm font-medium text-slate-300"
       >
         <span className="inline-block w-1 h-1 rounded-full bg-emerald-400 ml-2"></span>
         {label}
       </label>
 
       <div className="relative">
-        <Icon className="absolute right-4 top-1/2 -translate-y-1/2 text-emerald-400 text-lg" />
+        <Icon className="absolute right-4 top-1/2 -translate-y-1/2 text-emerald-400 text-sm md:text-lg" />
 
         <input
           id={id}
@@ -28,7 +28,8 @@ const InputField = ({
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className="w-full h-12 rounded-xl border border-emerald-900/40 bg-[#16231F] pr-12 pl-4 text-slate-100 placeholder:text-slate-500 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+          className="w-full h-10 md:h-12 text-sm md:text-base rounded-md md:rounded-xl border border-emerald-900/40 bg-[#16231F] pr-10 md:pr-12
+          pl-3 md:pl-4 text-slate-100 placeholder:text-slate-500 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
         />
       </div>
     </div>
