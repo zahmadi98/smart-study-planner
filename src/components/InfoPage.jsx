@@ -24,22 +24,22 @@ const InfoPage = ({className}) => {
     
 
     return(
-        <div className={`${className} flex flex-col w-full gap-y-5 mt-10`}>
+        <div className={`${className} flex flex-col w-full gap-y-5 mt:5 md:mt-10`}>
            <div className="flex flex-col items-center mb-5">
-            <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 backdrop-blur-md flex items-center justify-center shadow-xl shadow-emerald-900/20">
+            <div className="w-10 h-10 md:w-16 md:h-16 rounded-md md:rounded-2xl bg-emerald-500/10 border border-emerald-500/20 backdrop-blur-md flex items-center justify-center shadow-xl shadow-emerald-900/20">
                 <FiUser className="text-3xl text-emerald-400" />
             </div>
 
-            <h1 className="mt-3 text-3xl font-bold text-slate-100">
+            <h1 className="text-xl mt-2 md:mt-3 font-bold text-slate-100 md:text-3xl">
                 اطلاعات فردی
             </h1>
 
-            <p className="mt-2 text-center text-slate-400">
+            <p className="text-sm mt-1 md:mt-2 text-center text-slate-400">
                 لطفاً اطلاعات خواسته شده را با دقت وارد کنید.
             </p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-y-3 md:flex-row md:gap-4">
                 <InputField
                     id="firstName"
                     label="نام"
@@ -60,7 +60,7 @@ const InfoPage = ({className}) => {
                 
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-y-3 md:flex-row md:gap-4">
                 <SelectField
                     id="gender"
                     label="جنسیت"

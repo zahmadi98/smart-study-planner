@@ -1,6 +1,6 @@
 const ProgressBar = ({ progress = 17 }) => {
   return (
-    <div className="w-full">
+    <div className="w-full hidden md:block">
       <div className="flex justify-between items-center mb-3">
         <span className="text-slate-300 text-sm font-medium">
           مرحله ۱ از ۶
