@@ -3,7 +3,7 @@ import steps from "../Data/steps";
 
 const Sidebar = () => {
   return (
-    <div className="md:flex-[1] flex md:flex-col justify-center md:justify-start overflow-x-auto">
+    <div className="md:flex-1 flex md:flex-col justify-center md:justify-start overflow-x-auto">
         {steps.map((step, index) => (
             <StepItem
                 key={step.id}
