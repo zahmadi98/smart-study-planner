@@ -9,6 +9,7 @@ import {
 } from "react-icons/fi";
 import InputField from "./Ui/InputField";
 import SelectField from "./Ui/SelectField";
+import FormNavigation from "./Ui/FormNavigation";
 
 
 const InfoPage = ({className}) => {
@@ -135,6 +136,13 @@ const InfoPage = ({className}) => {
                 />
                   
             </div>
+            
+            <hr className="border-emerald-900/40 mt-6"/>
+
+            <FormNavigation
+                onNext={() => console.log("Next")}
+                onPrev={() => console.log("Prev")}
+                />
         </div>
 
     );
